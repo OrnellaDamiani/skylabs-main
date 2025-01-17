@@ -1,0 +1,46 @@
+.icons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:80px;
+    background-color: #2D2F3A;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+ 
+  .icon-circle {
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+  }
+  .icon-circle:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+  
+  .icon {
+    font-size: 40px;
+  }
+  
+  .purple {
+    color: #5b4fc2;
+  }
+
+  
+  
+  .blue {
+    color: #4fc2e0;
+    
+  }
+
+  .hola-text{
+    display: flex;
+    color: #2D2F3A;
+  }
