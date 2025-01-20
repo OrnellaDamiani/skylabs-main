@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './Navbar.css'; // Aquí puedes agregar tus estilos CSS
 import logo from '../Media/logo.png'
 
@@ -14,10 +15,26 @@ const Navbar = () => {
         
       </div>
       <ul className="navbar-links">
-        <li><a href="/">Home</a></li>
-        <li><a href="/aboutus">About us</a></li>
-        <li><a href="/servicios">Features</a></li>
-        <li><a href="/contacto">Contact</a></li>
+        <li>
+        <NavLink to="/" exact activeClassName="active">
+            Home
+          </NavLink>
+        </li>
+        <li>
+        <NavLink to="./AboutUs" activeClassName="active">
+            About us
+          </NavLink>
+        </li>
+        <li>
+        <NavLink to="./Features" activeClassName="active">
+            Features
+          </NavLink>
+        </li>
+        <li>
+        <NavLink to="./ContactForm" activeClassName="active">
+            Contact
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );
