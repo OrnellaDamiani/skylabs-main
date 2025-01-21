@@ -1,44 +1,26 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React, {useRef} from 'react';
 import './Navbar.css'; // Aquí puedes agregar tus estilos CSS
 import logo from '../Media/logo.png'
 
-const Navbar = () => {
+const Navbar = ({ scrollToSection }) => {
   return (
     <nav className="navbar">
       <div className="navbar-brand">
-      <div className='logo-container' onClick={()=>navegate(`/`)}>
-                <img src={logo} alt="Logo" className="logo" />
-                <a href="/" className='sky-text'>Sky</a> <a className='labs-text'>Labs</a>
-                <a className='developments-text'>Developments</a>
-            </div>
-        
+        <div className="logo-container">
+          <img src={logo} alt="logo" className="logo" />
+          <a href="/" className="sky-text">Sky</a>
+          <a href="/" className="labs-text">Labs</a>
+        </div>
       </div>
+
       <ul className="navbar-links">
-        <li>
-        <NavLink to="/" exact activeClassName="active">
-            Home
-          </NavLink>
-        </li>
-        <li>
-        <NavLink to="./AboutUs" activeClassName="active">
-            About us
-          </NavLink>
-        </li>
-        <li>
-        <NavLink to="./Features" activeClassName="active">
-            Features
-          </NavLink>
-        </li>
-        <li>
-        <NavLink to="./ContactForm" activeClassName="active">
-            Contact
-          </NavLink>
-        </li>
+        <li onClick={() => scrollToSection("home")}>Home</li>
+        <li onClick={() => scrollToSection("about")}>About</li>
+        <li onClick={() => scrollToSection("features")}>Features</li>
+        <li onClick={() => scrollToSection("contact")}>Contact</li>
       </ul>
     </nav>
   );
-}
+};
 
 export default Navbar;
-

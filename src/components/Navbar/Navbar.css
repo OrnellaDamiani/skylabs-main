@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #2D2F3A;
-    padding: 10px 20px;
+    padding: 2px 20px;
     font-family: "Montserrat", serif;
   }
 
@@ -15,6 +15,7 @@
   
   .labs-text{ 
     color: #493B9A ;
+    text-decoration: none;
   }
 
   .developments-text{
@@ -43,15 +44,17 @@
     text-decoration: none;
     font-size: 24px;
     font-weight: bold;
+
   }
   
   .navbar-links {
     list-style: none;
     display: flex;
+    
   }
   
   .navbar-links li {
-    margin-left: 20px;
+    margin-left: 40px;
   }
   
   .navbar-links a {
@@ -60,6 +63,7 @@
     font-size: 18px;
   }
   
-  .navbar-links a:hover {
+  .navbar-links li:hover {
     color: #48BFE3;
+    cursor: pointer;
   }
